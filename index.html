@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body class="container">
+	<header>
+		<h1>CoffeeRun</h1>
+	</header>
+	<section>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form data-coffee-order="form"> 
+							<!-- name attirbute is the key and what user types in
+					will be the value -->
+					<div class="form-group">
+						<label for="coffeeOrder">Coffee Order</label>
+						<input id="coffeeOrder" class="form-control" name="coffee" autofocus="">
+					</div>
+					<div class="form-group">
+						<label for="emailInput">email Address</label>
+						<input id="emailInput" class="form-control" name="emailAddress" placeholder="dchh@123.com">
+					</div>
+						<!-- mark up for radio buttons -->
+					<div class="radio">
+						<label>
+							<input type="radio" name="size" value="short">
+							Short
+						</label>
+				
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="size"  value= "Tall" checked="">
+							Tall
+						</label>
+				
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="size" value="grande">
+							Grande
+						</label>
+				
+					</div>
+					<div class="form-group">
+						<label for="flavorShot">Flavor Shot</label>
+						<select id="flavorShot" class="form-control" name="flavor">
+							<option value="">None</option>
+							<option value="caramel">Caramel</option>
+							<option value="almond">Almond</option>
+							<option value="mocha">Mocha</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="strengthLevel"> Caffeine Rating</label>
+							<!-- defualt value of 30. -->
+						<input id="strengthLevel" name="strength" value="30" type="range">
+					</div>
+					
+			<button type="submit" class="btn btn-success">Sumbit</button>
+			<button type="submit" class="btn btn-default">Reset</button>
+
+
+
+
+
+
+
+				</form>
+			</div>
+		</div>
+		<div class=" panel panel default">
+			<div class="panel-body">
+				<h4>Pending Orders : </h4>
+				<div data-coffee-order="checkbox"></div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<a href="Desktop/fe101/coffeewebsite/menue.html">Back to Menu</a>
+	</section>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+ <!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+<script type="text/javascript" src="scripts/datastore.js" charset="utf-8"></script>
+<script type="text/javascript" src="scripts/truck.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="scripts/formhandler.js" charset="utf-8"></script>
+<script type="text/javascript" src="scripts/CheckList.js" charset="utf-8"></script>
+<script type="text/javascript" src="scripts/main.js" charset="utf-8"></script>
+
+</body>
+</html>
